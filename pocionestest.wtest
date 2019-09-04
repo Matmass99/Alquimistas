@@ -1,0 +1,21 @@
+import alquimistas.*
+
+describe "Pociones Test"{
+	
+	test "Las pociones son efectivas?" {
+		
+		pocion.agregarMaterial(material1)
+		assert.that(pocion.efectivo())
+}
+	test "La capacidad de la pocion es ..."{
+		pocion.agregarMaterial(material1)
+		pocion.agregarMaterial(material2)
+		assert.equals(170,pocion.capacidad())
+	}
+	
+	test "Tiene materiales la pocion?"{
+		pocion.agregarMaterial(material1)
+		pocion.agregarMaterial(material2)
+		assert.that(pocion.hayMateriales())
+	}
+}
